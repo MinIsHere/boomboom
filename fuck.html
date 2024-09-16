@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Music Website</h1>
+        <input type="text" id="search" placeholder="Tìm kiếm bài hát...">
+    </header>
+    <script>
+        document.getElementById('search').addEventListener('input', function() {
+        let filter = this.value.toLowerCase();
+        let songTitles = document.querySelectorAll('h3');
+        songTitles.forEach(function(songTitle) {
+            if (songTitle.textContent.toLowerCase().includes(filter)) {
+                songTitle.parentElement.style.display = '';
+            } else {
+                songTitle.parentElement.style.display = 'none';
+            }
+        });
+    });
+    </script>
+<nav>
+    <ul>
+        <li><a href="#playlist-soobin">Playlist Soobin</a></li>
+        <li><a href="#playlist-congdien">ATVNCG công diễn</a></li>
+        <li><a href="#playlist-concert">Concert</a></li>
+    </ul>
+</nav>
+
+    <section id="playlist-soobin">
+        <h2>Playlist Soobin</h2>
+        <ul>
+            <li>
+                <img src="./maxresdefault (2).jpg" alt="Ai mà biết được Cover" class="cover">
+                <h3>Ai mà biết được</h3>
+                <audio controls>
+                    <source src="./y2mate.com - SOOBIN tlinh  Ai Mà Biết Được ft Touliver  BẬT NÓ LÊN Album Official MV.mp3" type="audio/mpeg">
+                </audio>
+                
+            </li>
+            <li>
+                <img src="./maxresdefault.jpg" alt="Dancing in the dark Cover" class="cover">
+                <h3>Dancing in the dark</h3>
+                <audio controls>
+                    <source src="./y2mate.com - SOOBIN  DANCING IN THE DARK  BẬT NÓ LÊN Album Official Visualizer.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./maxresdefault (1).jpg" alt="Heyy Cover" class="cover">
+                <h3>Heyyy</h3>
+                <audio controls>
+                    <source src="./y2mate.com - SOOBIN  HEYYY  Official MV.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+        </ul>
+    </section>
+
+    <header>
+        <h1>Playlist ATVNGCG công diễn</h1>
+    </header>
+
+    <section id="playlist-congdien">
+        <h2>ATVNCG công diễn</h2>
+        <ul>
+            <li>
+                <img src="./hq720.jpg" alt="Anh sẽ nhớ mãi Cover" class="cover">
+                <h3>Anh sẽ nhớ mãi</h3>
+                <audio controls>
+                    <source src="./y2mate.com - ANH SẼ NHỚ MÃI  TIẾT MỤC VOCAL NHÀ CHÍN MUỒI  CÔNG DIỄN 3 ANH TRAI VƯỢT NGÀN CHÔNG GAI 2024.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./hq720 (1).jpg" alt="Bao tiền một mớ bình yên Cover" class="cover">
+                <h3>Bao tiền một mớ bình yên</h3>
+                <audio controls>
+                    <source src="./y2mate.com - BAO TIỀN MỘT MỚ BÌNH YÊN  TIẾT MỤC LIÊN MINH KAME  CÔNG DIỄN 2 ANH TRAI VƯỢT NGÀN CHÔNG GAI 2024.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./maxresdefault (3).jpg" alt="Trống cơm Cover" class="cover">
+                <h3>Trống Cơm</h3>
+                <audio controls>
+                    <source src="./y2mate.com - TRỐNG CƠM  TỰ LONG SOOBIN CƯỜNG SEVEN  NHÀ SAO SÁNG CÔNG DIỄN 1 ANH TRAI VƯỢT NGÀN CHÔNG GAI.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./hq720 (2).jpg" alt="12h03 Cover" class="cover">
+                <h3>12h03</h3>
+                <audio controls>
+                    <source src="./y2mate.com - 12H03  CƯỜNG SEVEN STRONG TRỌNG HIẾU  CÔNG DIỄN 4  ANH TRAI VƯỢT NGÀN CHÔNG GAI 2024.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+        </ul>
+    </section>
+
+
+    <header>
+        <h1>Playlist ATVNCG Concert</h1>
+    </header>
+
+    <section id="playlist-concert">
+        <h2>Concert</h2>
+        <ul>
+            <li>
+                <img src="./maxresdefault (4).jpg" alt="Giá như Cover" class="cover">
+                <h3>Giá như</h3>
+                <audio controls>
+                    <source src="./y2mate.com - GIÁ NHƯ  SOOBIN  Highnote Siêu Mượt BÙNG NỔ SÂN KHẤU Anh Trai Vượt Ngàn Chông Gai 2024.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./maxresdefault (5).jpg" alt="Nước hoa Cover" class="cover">
+                <h3>Nước hoa</h3>
+                <audio controls>
+                    <source src="./y2mate.com - NƯỚC HOA  SOOBIN KAY TRẦN CƯỜNG SEVEN KIÊN ỨNG  ANH TRAI VƯỢT NGÀN CHÔNG GAI 2024.mp3" type="audio/mpeg">
+                </audio>    
+            </li>
+            <li>
+                <img src="./maxresdefault (6).jpg" alt="Lặng Cover" class="cover">
+                <h3>Lặng</h3>
+                <audio controls>
+                    <source src="./y2mate.com - LẶNG  ANH TÀI RHYMASTIC  Tiết mục SOLO tại ANH TRAI VƯỢT NGÀN CHÔNG GAI 2024.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./maxresdefault (7).jpg" alt="Men Cry Cover" class="cover">
+                <h3>Men Cry</h3>
+                <audio controls>
+                    <source src="./y2mate.com - MEN CRY  ANH TÀI BINZ  Tiết mục SOLO tại ANH TRAI VƯỢT NGÀN CHÔNG GAI 2024.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+        </ul>
+    </section>
+
+<footer>
+    <p>&copy; 2024 My Music Website</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
